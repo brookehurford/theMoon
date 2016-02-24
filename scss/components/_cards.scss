@@ -73,6 +73,9 @@
     }
   }
   #cardB {
+    @include background-image(linear-gradient(rgba($earthBlue, 0.45),
+    rgba($earthBlue, 0.45)),url("#{$path-img}/moonWalk.gif"));
+    background-size: cover;
   }
   #cardC {
     @include background-image(linear-gradient(rgba($white, 0.45),
