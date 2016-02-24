@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  @extend %centeredText;
+  background: $moonGray;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

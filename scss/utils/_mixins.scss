@@ -1,0 +1,9 @@
+// Text Format
+
+@mixin text($size:null, $weight:null, $l-height:null, $letter-spacing:null, $color:null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $l-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}

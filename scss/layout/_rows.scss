@@ -1,0 +1,84 @@
+.row {
+  color: $white;
+  clear: both;
+  overflow: auto;
+  width: 100%;
+  .card {
+    float: left;
+    p {
+      margin-top: 0;
+    }
+  }
+}
+
+#row2 {
+  height: 30vh;
+  #cardA {
+    @include size(50% 100%);
+  }
+  #cardB {
+    @include size(25% 100%);
+  }
+  #cardC {
+    @include size(25% 100%);
+  }
+}
+
+#row3 {
+  height: 30vh;
+  #cardA {
+    @include size(25% 100%);
+    .cardTop {
+      height: 50%;
+    }
+    .cardBottom {
+      height: 50%;
+    }
+  }
+  #cardB {
+    @include size(25% 100%);
+  }
+  #cardC {
+    @include size(50% 100%);
+    .cardTop {
+      height: 50%;
+      background: $dayColor;
+      @include padding(2%);
+    }
+    .cardBottom {
+      height: 50%;
+      background: $nightColor;
+      @include padding(2%);
+    }
+  }
+}
+
+#row4 {
+  height: 30vh;
+  #cardA {
+    @include size(25% 100%);
+  }
+  #cardB {
+    @include size(50% 100%);
+  }
+  #cardC {
+    @include size(25% 100%);
+  }
+}
+
+
+
+
+
+// .row {
+//   border: 4px solid purple;
+//   #cardA {
+//     border: 1px solid red;
+//   }
+//   #cardB {
+//     border: 1px solid blue;
+//   }
+//   #cardC {
+//     border: 1px solid green;
+//   }
+// }

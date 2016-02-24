@@ -1,0 +1,100 @@
+//==================
+// Row 2 Cards
+//==================
+
+#row2 {
+  h3 {
+    @include position(relative, 42% null null null);
+    @include text(24px, normal, $letter-spacing: 2px);
+    text-shadow: 2px 2px 2px black;
+  }
+  hr {
+    @include position(relative, 42% null null null);
+    width: 60%;
+    border: .15em solid $white;
+  }
+  #cardA {
+    @include background-image(linear-gradient(rgba($spaceOrange, 0.45),
+    rgba($spaceOrange, 0.45)),url("#{$path-img}/copernicus.jpg"));
+  }
+  #cardB {
+    @include background-image(linear-gradient(rgba($earthBlue, 0.45),
+    rgba($earthBlue, 0.45)),url("#{$path-img}/moonWalk.gif"));
+    background-size: cover;
+  }
+  #cardC {
+    @include background-image(linear-gradient(rgba($white, 0.45),
+    rgba($white, 0.45)),url("#{$path-img}/guide.jpg"));
+    background-size: cover;
+  }
+}
+
+//==================
+// Row 3 Cards
+//==================
+
+#row3 {
+  #cardA {
+    .cardTop {
+      overflow: hidden;
+      padding: 0px !important;
+      position: relative;
+      .coverVidText {
+        @include text($weight: normal, $letter-spacing: 1.5px);
+        @include position(absolute, 1% null 0 null);
+        @include size(100% 120px);
+        @extend %centeredText;
+        line-height: 1;
+        margin: auto;
+        h1 {
+          @include text(3em);
+          margin: 0;
+          padding-top: .2em;
+          padding-bottom: .5em;
+        }
+      }
+      .masthead-video {
+          object-fit: cover;
+          width: 100%;
+          min-height: 200px;
+      }
+    }
+    .cardBottom {
+      background: linear-gradient(#391313, #391d13, #392613, #393013, #393913, #303913, #263913, #1d3913, #133913, #13391d, #133926, #133930, #133939, #133039, #132639, #131d39, #131339, #1d1339, #261339, #301339, #391339, #391330, #391326, #39131d);
+      .cardBottomText {
+        @include position(relative, 15% null 0 null);
+        @include text($weight: normal, $letter-spacing: 1.5px);
+        h1 {
+          @include text(3em);
+          margin: 0;
+          padding-bottom: .3em;
+        }
+      }
+    }
+  }
+  #cardB {
+  }
+  #cardC {
+    @include background-image(linear-gradient(rgba($white, 0.45),
+    rgba($white, 0.45)),url("#{$path-img}/guide.jpg"));
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//bottom

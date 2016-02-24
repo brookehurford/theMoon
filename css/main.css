@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body, #row3 #cardA .cardTop .coverVidText {
+  text-align: center; }
+
+.navbar ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.navbar ul {
+  overflow: auto; }
+
+.row {
+  color: #fff;
+  clear: both;
+  overflow: auto;
+  width: 100%; }
+  .row .card {
+    float: left; }
+    .row .card p {
+      margin-top: 0; }
+
+#row2 {
+  height: 30vh; }
+  #row2 #cardA {
+    height: 100%;
+    width: 50%; }
+  #row2 #cardB {
+    height: 100%;
+    width: 25%; }
+  #row2 #cardC {
+    height: 100%;
+    width: 25%; }
+
+#row3 {
+  height: 30vh; }
+  #row3 #cardA {
+    height: 100%;
+    width: 25%; }
+    #row3 #cardA .cardTop {
+      height: 50%; }
+    #row3 #cardA .cardBottom {
+      height: 50%; }
+  #row3 #cardB {
+    height: 100%;
+    width: 25%; }
+  #row3 #cardC {
+    height: 100%;
+    width: 50%; }
+    #row3 #cardC .cardTop {
+      height: 50%;
+      background: #133913;
+      padding: 2%; }
+    #row3 #cardC .cardBottom {
+      height: 50%;
+      background: #391339;
+      padding: 2%; }
+
+#row4 {
+  height: 30vh; }
+  #row4 #cardA {
+    height: 100%;
+    width: 25%; }
+  #row4 #cardB {
+    height: 100%;
+    width: 50%; }
+  #row4 #cardC {
+    height: 100%;
+    width: 25%; }
+
+.pageWrapper {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+  .pageWrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.footer {
+  clear: both; }
+
+.heroImage {
+  background-image: -webkit-linear-gradient(black 0px, transparent 100%), url("../img/moonView.jpg");
+  background-image: linear-gradient(to   , transparent 100%), url("../img/moonView.jpg");
+  background-size: cover;
+  height: 50vh; }
+
+.heroText {
+  border: none;
+  padding-top: 8%;
+  padding-bottom: 50px; }
+  .heroText h2 {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 0.4em;
+    letter-spacing: 2px;
+    color: #fff; }
+
+.navbar {
+  margin-top: 0px;
+  background-color: #fff; }
+  .navbar ul {
+    margin-top: 0px;
+    padding-top: 40px;
+    list-style: none;
+    background: #fff;
+    width: 60%; }
+    .navbar ul li {
+      display: inline;
+      margin: 2%;
+      color: #A9A9A9; }
+    .navbar ul .title {
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: black; }
+  .navbar #menuLink {
+    position: relative;
+    bottom: 50px;
+    left: 43%;
+    font-weight: bold;
+    color: #13391d; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  background: #F5F5F5;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.button {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 40px;
+  font-size: 1.2em;
+  letter-spacing: 3.5px; }
+  .button:hover {
+    background: #fff;
+    color: #000;
+    -webkit-transition: color .3s linear;
+    -webkit-transition: background .3s linear; }
+
+#row2 h3 {
+  position: relative;
+  top: 42%;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px black; }
+#row2 hr {
+  position: relative;
+  top: 42%;
+  width: 60%;
+  border: 0.15em solid #fff; }
+#row2 #cardA {
+  background-image: -webkit-linear-gradient(rgba(197, 102, 54, 0.45), rgba(197, 102, 54, 0.45)), url("../img/copernicus.jpg");
+  background-image: linear-gradient(rgba(197, 102, 54, 0.45), rgba(197, 102, 54, 0.45)), url("../img/copernicus.jpg"); }
+#row2 #cardB {
+  background-image: -webkit-linear-gradient(rgba(73, 107, 155, 0.45), rgba(73, 107, 155, 0.45)), url("../img/moonWalk.gif");
+  background-image: linear-gradient(rgba(73, 107, 155, 0.45), rgba(73, 107, 155, 0.45)), url("../img/moonWalk.gif");
+  background-size: cover; }
+#row2 #cardC {
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
+  background-size: cover; }
+
+#row3 #cardA .cardTop {
+  overflow: hidden;
+  padding: 0px !important;
+  position: relative; }
+  #row3 #cardA .cardTop .coverVidText {
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top: 1%;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+    line-height: 1;
+    margin: auto; }
+    #row3 #cardA .cardTop .coverVidText h1 {
+      font-size: 3em;
+      margin: 0;
+      padding-top: .2em;
+      padding-bottom: .5em; }
+  #row3 #cardA .cardTop .masthead-video {
+    object-fit: cover;
+    width: 100%;
+    min-height: 200px; }
+#row3 #cardA .cardBottom {
+  background: linear-gradient(#391313, #391d13, #392613, #393013, #393913, #303913, #263913, #1d3913, #133913, #13391d, #133926, #133930, #133939, #133039, #132639, #131d39, #131339, #1d1339, #261339, #301339, #391339, #391330, #391326, #39131d); }
+  #row3 #cardA .cardBottom .cardBottomText {
+    position: relative;
+    top: 15%;
+    bottom: 0;
+    font-weight: normal;
+    letter-spacing: 1.5px; }
+    #row3 #cardA .cardBottom .cardBottomText h1 {
+      font-size: 3em;
+      margin: 0;
+      padding-bottom: .3em; }
+#row3 #cardC {
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
+  background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */

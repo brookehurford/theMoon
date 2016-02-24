@@ -1,0 +1,14 @@
+// Button Styles
+
+.button {
+  color: $white;
+  border: 2px solid $white;
+  @include padding(10px 40px 10px 40px);
+  @include text(1.2em, $letter-spacing: 3.5px);
+  &:hover{
+    background: $white;
+    color: $black;
+    -webkit-transition: color .3s linear;
+    -webkit-transition: background .3s linear;
+  }
+}

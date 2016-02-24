@@ -1,0 +1,26 @@
+.navbar {
+  margin-top: 0px;
+  background-color: $white;
+  ul {
+    @extend %centeredBlock;
+    @extend %overflow;
+    margin-top: 0px;
+    padding-top: 40px;
+    list-style: none;
+    background: $white;
+    width: 60%;
+    li {
+      display: inline;
+      margin: 2%;
+      color: $textGray;
+    }
+    .title {
+      @include text(3em, bold, $letter-spacing: 2px, $color:black);
+
+    }
+  }
+  #menuLink {
+    @include position(relative, null null 50px 43%);
+    @include text($weight:bold, $color: $darkGreen);
+  }
+}
