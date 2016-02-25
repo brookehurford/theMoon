@@ -42,12 +42,12 @@
     @include size(50% 100%);
     .cardTop {
       height: 50%;
-      background: $dayColor;
+      // background: $dayColor;
       @include padding(2%);
     }
     .cardBottom {
       height: 50%;
-      background: $nightColor;
+      // background: $nightColor;
       @include padding(2%);
     }
   }

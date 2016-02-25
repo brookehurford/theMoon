@@ -60,7 +60,9 @@
       }
     }
     .cardBottom {
-      background: linear-gradient(#391313, #391d13, #392613, #393013, #393913, #303913, #263913, #1d3913, #133913, #13391d, #133926, #133930, #133939, #133039, #132639, #131d39, #131339, #1d1339, #261339, #301339, #391339, #391330, #391326, #39131d);
+      @include background-image(linear-gradient(rgba($nightColor, 0.6),
+      rgba($nightColor, 0.6)),url("#{$path-img}/spaceLogo.jpg"));
+      background-size: cover;
       .cardBottomText {
         @include position(relative, 15% null 0 null);
         @include text($weight: normal, $letter-spacing: 1.5px);
@@ -73,9 +75,19 @@
     }
   }
   #cardB {
-    @include background-image(linear-gradient(rgba($earthBlue, 0.45),
-    rgba($earthBlue, 0.45)),url("#{$path-img}/moonWalk.gif"));
+    color: black;
+    @include background-image(linear-gradient(rgba($white, 0.6),
+    rgba($white, 0.6)),url("#{$path-img}/rockets.jpg"));
     background-size: cover;
+    p:first-child {
+      @include position(relative, 7% null 0 null);
+      @include text($weight: bold, $letter-spacing: 1.5px);
+    }
+    p:nth-child(2) {
+      @include position(relative, 25% null 0 null);
+      @include text($weight: bold, $l-height: 30px, $letter-spacing: 1.5px);
+      @include padding(null 10% null 10%);
+    }
   }
   #cardC {
     @include background-image(linear-gradient(rgba($white, 0.45),
