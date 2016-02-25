@@ -100,7 +100,7 @@ html {
     width: 100%;
     padding-bottom: 50px;
     line-height: 1;
-    margin: auto; }
+    margin: 14% auto; }
     .heroImage .heroText h2 {
       font-size: 40px;
       font-weight: normal;
@@ -108,6 +108,8 @@ html {
       letter-spacing: 2px;
       color: #fff;
       text-shadow: 2px 2px 2px black; }
+      .heroImage .heroText h2:nth-child(3) {
+        padding-bottom: 1.5em; }
 
 .navbar {
   margin-top: 0px;
@@ -182,11 +184,11 @@ a {
   width: 60%;
   border: 0.15em solid #fff; }
 #row2 #cardA {
-  background-image: -webkit-linear-gradient(rgba(197, 102, 54, 0.45), rgba(197, 102, 54, 0.45)), url("../img/copernicus.jpg");
-  background-image: linear-gradient(rgba(197, 102, 54, 0.45), rgba(197, 102, 54, 0.45)), url("../img/copernicus.jpg"); }
+  background-image: -webkit-linear-gradient(rgba(198, 32, 52, 0.45), rgba(198, 32, 52, 0.45)), url("../img/copernicus.jpg");
+  background-image: linear-gradient(rgba(198, 32, 52, 0.45), rgba(198, 32, 52, 0.45)), url("../img/copernicus.jpg"); }
 #row2 #cardB {
-  background-image: -webkit-linear-gradient(rgba(73, 107, 155, 0.45), rgba(73, 107, 155, 0.45)), url("../img/moonWalk.gif");
-  background-image: linear-gradient(rgba(73, 107, 155, 0.45), rgba(73, 107, 155, 0.45)), url("../img/moonWalk.gif");
+  background-image: -webkit-linear-gradient(rgba(116, 28, 88, 0.45), rgba(116, 28, 88, 0.45)), url("../img/moonWalk.gif");
+  background-image: linear-gradient(rgba(116, 28, 88, 0.45), rgba(116, 28, 88, 0.45)), url("../img/moonWalk.gif");
   background-size: cover; }
 #row2 #cardC {
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
@@ -217,8 +219,8 @@ a {
     width: 100%;
     min-height: 200px; }
 #row3 #cardA .cardBottom {
-  background-image: -webkit-linear-gradient(rgba(57, 19, 57, 0.6), rgba(57, 19, 57, 0.6)), url("../img/spaceLogo.jpg");
-  background-image: linear-gradient(rgba(57, 19, 57, 0.6), rgba(57, 19, 57, 0.6)), url("../img/spaceLogo.jpg");
+  background-image: -webkit-linear-gradient(rgba(37, 153, 150, 0.6), rgba(37, 153, 150, 0.6)), url("../img/spaceLogo.jpg");
+  background-image: linear-gradient(rgba(37, 153, 150, 0.6), rgba(37, 153, 150, 0.6)), url("../img/spaceLogo.jpg");
   background-size: cover; }
   #row3 #cardA .cardBottom .cardBottomText {
     position: relative;
@@ -250,9 +252,36 @@ a {
     letter-spacing: 1.5px;
     padding-right: 10%;
     padding-left: 10%; }
-#row3 #cardC {
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
+#row3 #cardC .cardTop {
+  background-image: url("../img/day-night-moon.png");
+  background-size: cover;
+  opacity: .8; }
+  #row3 #cardC .cardTop .cardTopText {
+    position: relative;
+    top: 13%;
+    bottom: 0;
+    font-weight: normal;
+    letter-spacing: 1.5px; }
+    #row3 #cardC .cardTop .cardTopText p, #row3 #cardC .cardTop .cardTopText h1 {
+      text-shadow: 2px 2px 2px black; }
+    #row3 #cardC .cardTop .cardTopText h1 {
+      font-size: 3em;
+      margin: 0;
+      padding-bottom: .3em; }
+#row3 #cardC .cardBottom {
+  background-image: url("../img/gibbous.png");
   background-size: cover; }
+  #row3 #cardC .cardBottom .cardBottomText {
+    position: relative;
+    top: 13%;
+    bottom: 0;
+    font-weight: normal;
+    letter-spacing: 1.5px; }
+    #row3 #cardC .cardBottom .cardBottomText p, #row3 #cardC .cardBottom .cardBottomText h1 {
+      text-shadow: 2px 2px 2px black; }
+    #row3 #cardC .cardBottom .cardBottomText h1 {
+      font-size: 3em;
+      margin: 0;
+      padding-bottom: .3em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -14,10 +14,13 @@
     @include padding(null null 50px null);
     @extend %centeredText;
     line-height: 1;
-    margin: auto;
+    margin: 14% auto;
     h2 {
       @include text(40px, normal, .4em, 2px, $white);
       text-shadow: 2px 2px 2px black;
+      &:nth-child(3) {
+        padding-bottom: 1.5em;
+      }
     }
   }
 }

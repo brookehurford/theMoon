@@ -14,12 +14,12 @@
     border: .15em solid $white;
   }
   #cardA {
-    @include background-image(linear-gradient(rgba($spaceOrange, 0.45),
-    rgba($spaceOrange, 0.45)),url("#{$path-img}/copernicus.jpg"));
+    @include background-image(linear-gradient(rgba($spaceRed, 0.45),
+    rgba($spaceRed, 0.45)),url("#{$path-img}/copernicus.jpg"));
   }
   #cardB {
-    @include background-image(linear-gradient(rgba($earthBlue, 0.45),
-    rgba($earthBlue, 0.45)),url("#{$path-img}/moonWalk.gif"));
+    @include background-image(linear-gradient(rgba($spacePurple, 0.45),
+    rgba($spacePurple, 0.45)),url("#{$path-img}/moonWalk.gif"));
     background-size: cover;
   }
   #cardC {
@@ -60,8 +60,8 @@
       }
     }
     .cardBottom {
-      @include background-image(linear-gradient(rgba($nightColor, 0.6),
-      rgba($nightColor, 0.6)),url("#{$path-img}/spaceLogo.jpg"));
+      @include background-image(linear-gradient(rgba($tourism, 0.6),
+      rgba($tourism, 0.6)),url("#{$path-img}/spaceLogo.jpg"));
       background-size: cover;
       .cardBottomText {
         @include position(relative, 15% null 0 null);
@@ -90,9 +90,39 @@
     }
   }
   #cardC {
-    @include background-image(linear-gradient(rgba($white, 0.45),
-    rgba($white, 0.45)),url("#{$path-img}/guide.jpg"));
-    background-size: cover;
+    .cardTop {
+      background-image: url("#{$path-img}/day-night-moon.png");
+      background-size: cover;
+      opacity: .8;
+      .cardTopText {
+        @include position(relative, 13% null 0 null);
+        @include text($weight: normal, $letter-spacing: 1.5px);
+        p, h1 {
+          text-shadow: 2px 2px 2px black;
+        }
+        h1 {
+          @include text(3em);
+          margin: 0;
+          padding-bottom: .3em;
+        }
+      }
+    }
+    .cardBottom {
+      background-image: url("#{$path-img}/gibbous.png");
+      background-size: cover;
+      .cardBottomText {
+        @include position(relative, 13% null 0 null);
+        @include text($weight: normal, $letter-spacing: 1.5px);
+        p, h1 {
+          text-shadow: 2px 2px 2px black;
+        }
+        h1 {
+          @include text(3em);
+          margin: 0;
+          padding-bottom: .3em;
+        }
+      }
+    }
   }
 }
 
