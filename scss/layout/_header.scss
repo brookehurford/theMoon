@@ -1,13 +1,37 @@
 .heroImage {
-  @include background-image(linear-gradient(black 0px, transparent 100%),url("#{$path-img}/moonView.jpg"));
-  background-size: cover;
-  height: 50vh;
-}
-
-.heroText {
-  border: none;
-  @include padding(8% null 50px null);
-  h2 {
-    @include text(40px, normal, .4em, 2px, $white);
+  overflow: hidden;
+  padding: 0px !important;
+  position: relative;
+  .heroText {
+    @include text($weight: normal, $letter-spacing: 1.5px);
+    @include position(absolute, 1% null 0 null);
+    @include size(100% 120px);
+    @extend %centeredText;
+    line-height: 1;
+    margin: auto;
+    h2 {
+      @include text(40px, normal, .4em, 2px, $white);
+    }
+  }
+  .masthead-video {
+      object-fit: cover;
+      width: 100%;
+      min-height: 200px;
   }
 }
+
+
+
+// .heroImage {
+//   @include background-image(linear-gradient(black 0px, transparent 100%),url("#{$path-img}/moonView.jpg"));
+//   background-size: cover;
+//   height: 50vh;
+// }
+
+// .heroText {
+//   border: none;
+//   @include padding(8% null 50px null);
+//   h2 {
+//     @include text(40px, normal, .4em, 2px, $white);
+//   }
+// }

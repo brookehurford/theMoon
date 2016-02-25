@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-body, #row3 #cardA .cardTop .coverVidText {
+.heroImage .heroText, body, #row3 #cardA .cardTop .coverVidText {
   text-align: center; }
 
 .navbar ul {
@@ -84,21 +84,29 @@ body, #row3 #cardA .cardTop .coverVidText {
   clear: both; }
 
 .heroImage {
-  background-image: -webkit-linear-gradient(black 0px, transparent 100%), url("../img/moonView.jpg");
-  background-image: linear-gradient(to   , transparent 100%), url("../img/moonView.jpg");
-  background-size: cover;
-  height: 50vh; }
-
-.heroText {
-  border: none;
-  padding-top: 8%;
-  padding-bottom: 50px; }
-  .heroText h2 {
-    font-size: 40px;
+  overflow: hidden;
+  padding: 0px !important;
+  position: relative; }
+  .heroImage .heroText {
     font-weight: normal;
-    line-height: 0.4em;
-    letter-spacing: 2px;
-    color: #fff; }
+    letter-spacing: 1.5px;
+    position: absolute;
+    top: 1%;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+    line-height: 1;
+    margin: auto; }
+    .heroImage .heroText h2 {
+      font-size: 40px;
+      font-weight: normal;
+      line-height: 0.4em;
+      letter-spacing: 2px;
+      color: #fff; }
+  .heroImage .masthead-video {
+    object-fit: cover;
+    width: 100%;
+    min-height: 200px; }
 
 .navbar {
   margin-top: 0px;
