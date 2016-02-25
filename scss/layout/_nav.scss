@@ -20,7 +20,11 @@
   }
   #menuLink {
     @include position(relative, null null 50px 43%);
-    @include text($weight:bold, $color: $darkGreen);
+    @include text($weight:bold, $color: $spacePurple);
+    &:hover {
+      letter-spacing: 2px;
+      -webkit-transition: letter-spacing .3s linear;
+    }
   }
   @media screen and #{$fullWidth} {
     li:nth-child(odd) {

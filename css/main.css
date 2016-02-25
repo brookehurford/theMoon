@@ -198,7 +198,10 @@ html {
     bottom: 50px;
     left: 43%;
     font-weight: bold;
-    color: #13391d; }
+    color: #741C58; }
+    .navbar #menuLink:hover {
+      letter-spacing: 2px;
+      -webkit-transition: letter-spacing .3s linear; }
   @media screen and (max-width: 985px) {
     .navbar li:nth-child(odd) {
       display: none; } }
@@ -271,19 +274,23 @@ a {
 
 #row2 h3 {
   position: relative;
-  top: 42%;
+  top: 38%;
   font-size: 24px;
   font-weight: normal;
   letter-spacing: 2px;
   text-shadow: 2px 2px 2px black; }
 #row2 hr {
   position: relative;
-  top: 42%;
+  top: 38%;
   width: 60%;
   border: 0.15em solid #fff; }
 #row2 #cardA {
   background-image: -webkit-linear-gradient(rgba(198, 32, 52, 0.45), rgba(198, 32, 52, 0.45)), url("../img/copernicus.jpg");
   background-image: linear-gradient(rgba(198, 32, 52, 0.45), rgba(198, 32, 52, 0.45)), url("../img/copernicus.jpg"); }
+  #row2 #cardA:hover h3 {
+    font-size: 2em;
+    -webkit-transition: font-size .3s linear;
+    cursor: pointer; }
 #row2 #cardB {
   background-image: -webkit-linear-gradient(rgba(116, 28, 88, 0.45), rgba(116, 28, 88, 0.45)), url("../img/moonWalk.gif");
   background-image: linear-gradient(rgba(116, 28, 88, 0.45), rgba(116, 28, 88, 0.45)), url("../img/moonWalk.gif");
@@ -291,10 +298,18 @@ a {
   @media screen and (max-width: 767px) {
     #row2 #cardB {
       background-size: contain; } }
+  #row2 #cardB:hover h3 {
+    font-size: 2em;
+    -webkit-transition: font-size .3s linear;
+    cursor: pointer; }
 #row2 #cardC {
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
   background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
   background-size: cover; }
+  #row2 #cardC:hover h3 {
+    font-size: 1.8em;
+    -webkit-transition: font-size .3s linear;
+    cursor: pointer; }
 
 #row3 #cardA .cardTop {
   overflow: hidden;
@@ -427,6 +442,11 @@ a {
       #row4 #cardA .appText h3 {
         font-size: 30px;
         margin-top: 0px; }
+        #row4 #cardA .appText h3:hover {
+          font-size: 2em;
+          -webkit-transition: font-size .3s linear;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px #F9AF3F; }
   #row4 #cardB {
     background-image: url("../img/postCard.png");
     background-size: cover;
@@ -477,7 +497,9 @@ a {
         text-shadow: 1px 1px 1px #741C58; }
         #row4 #cardC .socialLinks a:hover {
           color: #741C58;
-          text-shadow: 1px 1px 1px white; }
+          text-shadow: 1px 1px 1px white;
+          font-size: 35px;
+          -webkit-transition: font-size .2s linear; }
     #row4 #cardC hr {
       margin: 5% auto 5% auto;
       width: 60%; }

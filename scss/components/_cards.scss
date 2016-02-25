@@ -4,18 +4,25 @@
 
 #row2 {
   h3 {
-    @include position(relative, 42% null null null);
+    @include position(relative, 38% null null null);
     @include text(24px, normal, $letter-spacing: 2px);
     text-shadow: 2px 2px 2px black;
   }
   hr {
-    @include position(relative, 42% null null null);
+    @include position(relative, 38% null null null);
     width: 60%;
     border: .15em solid $white;
   }
   #cardA {
     @include background-image(linear-gradient(rgba($spaceRed, 0.45),
     rgba($spaceRed, 0.45)),url("#{$path-img}/copernicus.jpg"));
+    &:hover {
+      h3 {
+        font-size: 2em;
+        -webkit-transition: font-size .3s linear;
+        cursor: pointer;
+      }
+    }
   }
   #cardB {
     @include background-image(linear-gradient(rgba($spacePurple, 0.45),
@@ -24,11 +31,25 @@
     @media screen and #{$oneColumn} {
       background-size: contain;
     }
+    &:hover {
+      h3 {
+        font-size: 2em;
+        -webkit-transition: font-size .3s linear;
+        cursor: pointer;
+      }
+    }
   }
   #cardC {
     @include background-image(linear-gradient(rgba($white, 0.45),
     rgba($white, 0.45)),url("#{$path-img}/guide.jpg"));
     background-size: cover;
+    &:hover {
+      h3 {
+        font-size: 1.8em;
+        -webkit-transition: font-size .3s linear;
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -166,6 +187,12 @@
       h3 {
         font-size: 30px;
         margin-top: 0px;
+        &:hover {
+          font-size: 2em;
+          -webkit-transition: font-size .3s linear;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px $postCardOrange;
+        }
       }
     }
   }
@@ -221,6 +248,8 @@
         &:hover {
           color: $spacePurple;
           text-shadow: 1px 1px 1px white;
+          font-size: 35px;
+          -webkit-transition: font-size .2s linear;
         }
       }
     }
