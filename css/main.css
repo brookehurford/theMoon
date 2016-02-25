@@ -27,6 +27,9 @@ html {
       margin-top: 0; }
     @media screen and (max-width: 1320px) {
       .row .card {
+        -webkit-transition: 2s ease-in-out;
+        -moz-transition: 2s ease-in-out;
+        transition: 2s ease-in-out;
         width: 33.3% !important;
         overflow: hidden; } }
     @media screen and (max-width: 767px) {
@@ -34,6 +37,10 @@ html {
         float: none;
         width: 100% !important;
         height: 25vh !important; } }
+
+@media screen and (max-width: 985px) {
+  .row .card {
+    transition: none; } }
 
 #row2 {
   height: 30vh; }

@@ -10,6 +10,7 @@
       margin-top: 0;
     }
     @media screen and #{$smallDesktop} {
+      @include transition(2.0s ease-in-out);
       width: 33.3% !important;
       overflow: hidden;
     }
@@ -18,6 +19,12 @@
       width: 100% !important;
       height: 25vh !important;
     }
+  }
+}
+
+.row .card {
+  @media screen and #{$fullWidth} {
+    transition: none;
   }
 }
 
