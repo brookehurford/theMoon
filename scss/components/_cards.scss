@@ -131,6 +131,18 @@
   #cardA {
     background-image: url("#{$path-img}/moonApp.png");
     background-size: contain;
+    .appText {
+      @include position(relative, 7% null 0 null);
+      color: black;
+      p {
+        font-size: 13px;
+        text-transform: none;
+      }
+      h3 {
+        font-size: 30px;
+        margin-top: 0px;
+      }
+    }
   }
   #cardB {
     background-image: url("#{$path-img}/postCard.png");
@@ -155,10 +167,35 @@
         font-family: 'Nova Script', cursive;
         font-size: 1.5em;
         color: $spaceRed;
+        line-height: 30px;
       }
       h5 {
         margin-bottom: 2px;
       }
+    }
+  }
+  #cardC {
+    background: shade($postCardOrange, 12%);
+    opacity: .9;
+    p {
+      @include position(relative, 7% null 0 null);
+      @include text($weight: normal, $letter-spacing: 1.5px);
+      text-shadow: 1px 1px 1px $spacePurple;
+    }
+    .socialLinks {
+      @include position(relative, 20% null 0 null);
+      a {
+        @include text(24px, $weight: normal, $letter-spacing: 1.5px, $color: $white);
+        text-shadow: 1px 1px 1px $spacePurple;
+        &:hover {
+          color: $spacePurple;
+          text-shadow: 1px 1px 1px white;
+        }
+      }
+    }
+    hr {
+      margin: 5% auto 5% auto;
+      width: 60%;
     }
   }
 }

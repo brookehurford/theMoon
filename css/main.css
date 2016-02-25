@@ -74,7 +74,8 @@ html {
 .pageWrapper {
   max-width: 70%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: #fff; }
   .pageWrapper::after {
     clear: both;
     content: "";
@@ -82,6 +83,8 @@ html {
 
 .footer {
   clear: both; }
+  .footer hr {
+    margin: 50px; }
 
 .heroImage {
   overflow: hidden;
@@ -289,6 +292,17 @@ a {
   #row4 #cardA {
     background-image: url("../img/moonApp.png");
     background-size: contain; }
+    #row4 #cardA .appText {
+      position: relative;
+      top: 7%;
+      bottom: 0;
+      color: black; }
+      #row4 #cardA .appText p {
+        font-size: 13px;
+        text-transform: none; }
+      #row4 #cardA .appText h3 {
+        font-size: 30px;
+        margin-top: 0px; }
   #row4 #cardB {
     background-image: url("../img/postCard.png");
     background-size: cover;
@@ -308,8 +322,35 @@ a {
       #row4 #cardB .postCardText h3 {
         font-family: 'Nova Script', cursive;
         font-size: 1.5em;
-        color: #c62034; }
+        color: #c62034;
+        line-height: 30px; }
       #row4 #cardB .postCardText h5 {
         margin-bottom: 2px; }
+  #row4 #cardC {
+    background: #db9a37;
+    opacity: .9; }
+    #row4 #cardC p {
+      position: relative;
+      top: 7%;
+      bottom: 0;
+      font-weight: normal;
+      letter-spacing: 1.5px;
+      text-shadow: 1px 1px 1px #741C58; }
+    #row4 #cardC .socialLinks {
+      position: relative;
+      top: 20%;
+      bottom: 0; }
+      #row4 #cardC .socialLinks a {
+        font-size: 24px;
+        font-weight: normal;
+        letter-spacing: 1.5px;
+        color: #fff;
+        text-shadow: 1px 1px 1px #741C58; }
+        #row4 #cardC .socialLinks a:hover {
+          color: #741C58;
+          text-shadow: 1px 1px 1px white; }
+    #row4 #cardC hr {
+      margin: 5% auto 5% auto;
+      width: 60%; }
 
 /*# sourceMappingURL=main.css.map */
