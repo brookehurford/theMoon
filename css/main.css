@@ -122,9 +122,14 @@ html {
         display: table; } }
 
 .footer {
+  opacity: .7;
   clear: both; }
   .footer hr {
     margin: 50px; }
+  .footer p {
+    text-transform: none;
+    margin: 0 auto 50px auto;
+    max-width: 80%; }
 
 .heroImage {
   overflow: hidden;
@@ -184,6 +189,37 @@ html {
   @media screen and (max-width: 985px) {
     .navbar li:nth-child(odd) {
       display: none; } }
+  @media screen and (max-width: 505px) {
+    .navbar {
+      display: none; } }
+
+.mobileNav {
+  display: none;
+  overflow: auto;
+  width: 100%;
+  padding: 1em 2em; }
+  .mobileNav p {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    float: left;
+    margin: 0; }
+  .mobileNav a {
+    font-weight: bold;
+    color: #741C58;
+    padding: 1.5% 4%;
+    border: 1.5px solid #741C58;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 10%;
+    float: right;
+    margin-top: .6em; }
+    .mobileNav a:hover {
+      background: #51143e;
+      color: white; }
+  @media screen and (max-width: 505px) {
+    .mobileNav {
+      display: inline-block; } }
 
 *,
 *::before,

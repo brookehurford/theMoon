@@ -27,4 +27,35 @@
       display: none;
     }
   }
+  @media screen and #{$mobile} {
+    display: none;
+  }
+}
+
+.mobileNav {
+  display: none;
+  overflow: auto;
+  width: 100%;
+  padding: 1em 2em;
+  p {
+    @include text(2.5em, bold, $letter-spacing: 2px, $color:black);
+    float: left;
+    margin: 0;
+  }
+  a {
+    @include text($weight: bold, $color: $spacePurple);
+    @include padding(1.5% 4%);
+    border: 1.5px solid $spacePurple;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 10%;
+    float: right;
+    margin-top: .6em;
+    &:hover {
+      background: shade($spacePurple, 30%);
+      color: white;
+    }
+  }
+  @media screen and #{$mobile} {
+    display: inline-block;
+  }
 }

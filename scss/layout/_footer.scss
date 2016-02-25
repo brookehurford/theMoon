@@ -1,6 +1,12 @@
 .footer {
+  opacity: .7;
   clear: both;
   hr {
     margin: 50px;
+  }
+  p {
+    text-transform: none;
+    margin: 0 auto 50px auto;
+    max-width: 80%;
   }
 }
