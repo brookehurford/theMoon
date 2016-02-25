@@ -1,5 +1,6 @@
 .pageWrapper {
   @include outer-container;
+  @include transition(0.6s);
   background: #fff;
   @media screen and #{$smallDesktop} {
     @include outer-container(90%);

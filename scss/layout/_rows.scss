@@ -5,12 +5,13 @@
   width: 100%;
   min-height: 350px;
   .card {
+    @include transition(0.6s);
     float: left;
     p {
       margin-top: 0;
     }
     @media screen and #{$smallDesktop} {
-      @include transition(2.0s ease-in-out);
+      @include transition(1.5s ease-in-out);
       width: 33.3% !important;
       overflow: hidden;
     }

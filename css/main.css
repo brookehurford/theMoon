@@ -22,14 +22,17 @@ html {
   width: 100%;
   min-height: 350px; }
   .row .card {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
     float: left; }
     .row .card p {
       margin-top: 0; }
     @media screen and (max-width: 1320px) {
       .row .card {
-        -webkit-transition: 2s ease-in-out;
-        -moz-transition: 2s ease-in-out;
-        transition: 2s ease-in-out;
+        -webkit-transition: 1.5s ease-in-out;
+        -moz-transition: 1.5s ease-in-out;
+        transition: 1.5s ease-in-out;
         width: 33.3% !important;
         overflow: hidden; } }
     @media screen and (max-width: 767px) {
@@ -104,6 +107,9 @@ html {
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s;
   background: #fff; }
   .pageWrapper::after {
     clear: both;
