@@ -120,6 +120,10 @@
           @include text(3em);
           margin: 0;
           padding-bottom: .3em;
+          @media screen and #{$fullWidth} {
+            @include text(2.3em);
+            padding-bottom: .5em;
+          }
         }
       }
     }
@@ -130,7 +134,7 @@
   overflow: hidden;
   #cardA {
     background-image: url("#{$path-img}/moonApp.png");
-    background-size: contain;
+    background-size: cover;
     .appText {
       @include position(relative, 7% null 0 null);
       color: black;
@@ -171,6 +175,12 @@
       }
       h5 {
         margin-bottom: 2px;
+      }
+      @media screen and #{$fullWidth} {
+        margin-top: 10px;
+        p {
+          font-size: 14px;
+        }
       }
     }
   }

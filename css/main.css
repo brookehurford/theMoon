@@ -24,7 +24,7 @@ html {
     float: left; }
     .row .card p {
       margin-top: 0; }
-    @media screen and (max-width: 1260px) {
+    @media screen and (max-width: 1320px) {
       .row .card {
         width: 33.3% !important;
         overflow: hidden; } }
@@ -101,7 +101,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (max-width: 1260px) {
+  @media screen and (max-width: 1320px) {
     .pageWrapper {
       max-width: 90%;
       margin-left: auto;
@@ -129,6 +129,9 @@ html {
   overflow: hidden;
   background-color: #000;
   position: relative; }
+  @media screen and (max-width: 767px) {
+    .heroImage {
+      height: 40vh; } }
   .heroImage .masthead-video {
     object-fit: cover;
     z-index: 0;
@@ -325,12 +328,16 @@ a {
       font-size: 3em;
       margin: 0;
       padding-bottom: .3em; }
+      @media screen and (max-width: 978px) {
+        #row3 #cardC .cardBottom .cardBottomText h1 {
+          font-size: 2.3em;
+          padding-bottom: .5em; } }
 
 #row4 {
   overflow: hidden; }
   #row4 #cardA {
     background-image: url("../img/moonApp.png");
-    background-size: contain; }
+    background-size: cover; }
     #row4 #cardA .appText {
       position: relative;
       top: 7%;
@@ -365,6 +372,11 @@ a {
         line-height: 30px; }
       #row4 #cardB .postCardText h5 {
         margin-bottom: 2px; }
+      @media screen and (max-width: 978px) {
+        #row4 #cardB .postCardText {
+          margin-top: 10px; }
+          #row4 #cardB .postCardText p {
+            font-size: 14px; } }
   #row4 #cardC {
     background: #db9a37;
     opacity: .9; }
