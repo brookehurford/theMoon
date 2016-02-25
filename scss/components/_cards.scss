@@ -126,6 +126,43 @@
   }
 }
 
+#row4 {
+  overflow: hidden;
+  #cardA {
+    background-image: url("#{$path-img}/moonApp.png");
+    background-size: contain;
+  }
+  #cardB {
+    background-image: url("#{$path-img}/postCard.png");
+    background-size: cover;
+    opacity: .9;
+    text-align: left;
+    color: black;
+    .postCardText {
+      line-height: 15px;
+      @include padding(5%);
+      margin-top: 45px;
+      p, h5, h3, hr {
+        margin: 10px;
+      }
+      p {
+        margin-top: 0px;
+      }
+      hr {
+        margin: 0;
+      }
+      h3 {
+        font-family: 'Nova Script', cursive;
+        font-size: 1.5em;
+        color: $spaceRed;
+      }
+      h5 {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
 
 
 
