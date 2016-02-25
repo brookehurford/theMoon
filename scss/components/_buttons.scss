@@ -3,9 +3,13 @@
 .button {
   color: $white;
   border: 2px solid $white;
+  box-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px black;
   @include padding(10px 40px 10px 40px);
   @include text(1.2em, $letter-spacing: 3.5px);
   &:hover{
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black;
     background: $white;
     color: $black;
     -webkit-transition: color .3s linear;
