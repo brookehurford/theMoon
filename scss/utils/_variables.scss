@@ -19,3 +19,8 @@ $path-img: "../img";
 
 // Size Variables
 $max-width: 70%;
+
+// Media Queries
+$smallDesktop: "(max-width: 1260px)";
+$fullWidth: "(max-width: 978px)";
+$oneColumn: "(max-width: 767px)";

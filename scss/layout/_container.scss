@@ -1,4 +1,10 @@
 .pageWrapper {
   @include outer-container;
-  background: $white;
+  background: #fff;
+  @media screen and #{$smallDesktop} {
+    @include outer-container(90%);
+  }
+  @media screen and #{$fullWidth} {
+    @include outer-container(100%);
+  }
 }

@@ -24,12 +24,27 @@ html {
     float: left; }
     .row .card p {
       margin-top: 0; }
+    @media screen and (max-width: 1260px) {
+      .row .card {
+        width: 33.3% !important;
+        overflow: hidden; } }
+    @media screen and (max-width: 767px) {
+      .row .card {
+        float: none;
+        width: 100% !important;
+        height: 25vh !important; } }
 
 #row2 {
   height: 30vh; }
+  @media screen and (max-width: 767px) {
+    #row2 {
+      height: 100%; } }
   #row2 #cardA {
     height: 100%;
     width: 50%; }
+    @media screen and (max-width: 767px) {
+      #row2 #cardA {
+        height: 25vh; } }
   #row2 #cardB {
     height: 100%;
     width: 25%; }
@@ -39,6 +54,9 @@ html {
 
 #row3 {
   height: 30vh; }
+  @media screen and (max-width: 767px) {
+    #row3 {
+      height: 100%; } }
   #row3 #cardA {
     height: 100%;
     width: 25%; }
@@ -61,6 +79,9 @@ html {
 
 #row4 {
   height: 30vh; }
+  @media screen and (max-width: 767px) {
+    #row4 {
+      height: 100%; } }
   #row4 #cardA {
     height: 100%;
     width: 25%; }
@@ -80,6 +101,24 @@ html {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 1260px) {
+    .pageWrapper {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      .pageWrapper::after {
+        clear: both;
+        content: "";
+        display: table; } }
+  @media screen and (max-width: 978px) {
+    .pageWrapper {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .pageWrapper::after {
+        clear: both;
+        content: "";
+        display: table; } }
 
 .footer {
   clear: both; }
