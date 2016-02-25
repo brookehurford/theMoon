@@ -21,6 +21,9 @@
     @include background-image(linear-gradient(rgba($spacePurple, 0.45),
     rgba($spacePurple, 0.45)),url("#{$path-img}/moonWalk.gif"));
     background-size: cover;
+    @media screen and #{$oneColumn} {
+      background-size: contain;
+    }
   }
   #cardC {
     @include background-image(linear-gradient(rgba($white, 0.45),
@@ -88,6 +91,12 @@
       @include text($weight: bold, $l-height: 30px, $letter-spacing: 1.5px);
       @include padding(null 10% null 10%);
     }
+    @media screen and #{$fullWidth} {
+      p:nth-child(2) {
+        font-size: 25px;
+        @include position(relative, 16% null 0 null);
+      }
+    }
   }
   #cardC {
     .cardTop {
@@ -105,6 +114,9 @@
           margin: 0;
           padding-bottom: .3em;
         }
+        @media screen and #{$fullWidth} {
+          @include position(relative, 5% null 0 null);
+          }
       }
     }
     .cardBottom {
@@ -125,6 +137,9 @@
             padding-bottom: .5em;
           }
         }
+        @media screen and #{$fullWidth} {
+          @include position(relative, 5% null 0 null);
+        }
       }
     }
   }
@@ -132,9 +147,15 @@
 
 #row4 {
   overflow: hidden;
+  background: $appWhite;
   #cardA {
     background-image: url("#{$path-img}/moonApp.png");
     background-size: cover;
+    @media screen and #{$fullWidth} {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
     .appText {
       @include position(relative, 7% null 0 null);
       color: black;
@@ -206,6 +227,10 @@
     hr {
       margin: 5% auto 5% auto;
       width: 60%;
+      @media screen and #{$oneColumn} {
+        margin: 3% auto;
+        width: 30%;
+      }
     }
   }
 }

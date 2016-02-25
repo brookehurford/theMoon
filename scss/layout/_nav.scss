@@ -16,11 +16,15 @@
     }
     .title {
       @include text(3em, bold, $letter-spacing: 2px, $color:black);
-
     }
   }
   #menuLink {
     @include position(relative, null null 50px 43%);
     @include text($weight:bold, $color: $darkGreen);
+  }
+  @media screen and #{$fullWidth} {
+    li:nth-child(odd) {
+      display: none;
+    }
   }
 }

@@ -19,7 +19,8 @@ html {
   color: #fff;
   clear: both;
   overflow: auto;
-  width: 100%; }
+  width: 100%;
+  min-height: 350px; }
   .row .card {
     float: left; }
     .row .card p {
@@ -110,7 +111,7 @@ html {
         clear: both;
         content: "";
         display: table; } }
-  @media screen and (max-width: 978px) {
+  @media screen and (max-width: 985px) {
     .pageWrapper {
       max-width: 100%;
       margin-left: auto;
@@ -180,6 +181,9 @@ html {
     left: 43%;
     font-weight: bold;
     color: #13391d; }
+  @media screen and (max-width: 985px) {
+    .navbar li:nth-child(odd) {
+      display: none; } }
 
 *,
 *::before,
@@ -235,6 +239,9 @@ a {
   background-image: -webkit-linear-gradient(rgba(116, 28, 88, 0.45), rgba(116, 28, 88, 0.45)), url("../img/moonWalk.gif");
   background-image: linear-gradient(rgba(116, 28, 88, 0.45), rgba(116, 28, 88, 0.45)), url("../img/moonWalk.gif");
   background-size: cover; }
+  @media screen and (max-width: 767px) {
+    #row2 #cardB {
+      background-size: contain; } }
 #row2 #cardC {
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
   background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
@@ -297,6 +304,12 @@ a {
     letter-spacing: 1.5px;
     padding-right: 10%;
     padding-left: 10%; }
+  @media screen and (max-width: 985px) {
+    #row3 #cardB p:nth-child(2) {
+      font-size: 25px;
+      position: relative;
+      top: 16%;
+      bottom: 0; } }
 #row3 #cardC .cardTop {
   background-image: url("../img/day-night-moon.png");
   background-size: cover;
@@ -313,6 +326,11 @@ a {
       font-size: 3em;
       margin: 0;
       padding-bottom: .3em; }
+    @media screen and (max-width: 985px) {
+      #row3 #cardC .cardTop .cardTopText {
+        position: relative;
+        top: 5%;
+        bottom: 0; } }
 #row3 #cardC .cardBottom {
   background-image: url("../img/gibbous.png");
   background-size: cover; }
@@ -328,16 +346,27 @@ a {
       font-size: 3em;
       margin: 0;
       padding-bottom: .3em; }
-      @media screen and (max-width: 978px) {
+      @media screen and (max-width: 985px) {
         #row3 #cardC .cardBottom .cardBottomText h1 {
           font-size: 2.3em;
           padding-bottom: .5em; } }
+    @media screen and (max-width: 985px) {
+      #row3 #cardC .cardBottom .cardBottomText {
+        position: relative;
+        top: 5%;
+        bottom: 0; } }
 
 #row4 {
-  overflow: hidden; }
+  overflow: hidden;
+  background: #f9f9f9; }
   #row4 #cardA {
     background-image: url("../img/moonApp.png");
     background-size: cover; }
+    @media screen and (max-width: 985px) {
+      #row4 #cardA {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; } }
     #row4 #cardA .appText {
       position: relative;
       top: 7%;
@@ -372,7 +401,7 @@ a {
         line-height: 30px; }
       #row4 #cardB .postCardText h5 {
         margin-bottom: 2px; }
-      @media screen and (max-width: 978px) {
+      @media screen and (max-width: 985px) {
         #row4 #cardB .postCardText {
           margin-top: 10px; }
           #row4 #cardB .postCardText p {
@@ -403,5 +432,9 @@ a {
     #row4 #cardC hr {
       margin: 5% auto 5% auto;
       width: 60%; }
+      @media screen and (max-width: 767px) {
+        #row4 #cardC hr {
+          margin: 3% auto;
+          width: 30%; } }
 
 /*# sourceMappingURL=main.css.map */
